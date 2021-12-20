@@ -1,0 +1,8 @@
+---
+- hosts: all
+  become: yes
+  tasks: 
+  - name: i want to install websever on ubuntu 16 ansible node
+    apt:
+      name: apache2
+      state: present
